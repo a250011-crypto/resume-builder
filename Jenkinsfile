@@ -9,10 +9,11 @@ pipeline {
         }
 
         stage('Deploy Application') {
-            steps {
-                bat 'docker compose up -d'
-            }
-        }
+    steps {
+        bat 'docker rm -f resume_builder_app'
+        bat 'docker compose up -d'
+    }
+}
     }
 
     post {
