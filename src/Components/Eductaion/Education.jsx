@@ -211,7 +211,7 @@ const isRequired = (section, field) =>
   };
 
   const handleSubmit = (section) => {
-    if (!validate(section)) return;
+    // if (!validate(section)) return;
 
     console.log("✅ Submitted:", educationData[section]);
 
